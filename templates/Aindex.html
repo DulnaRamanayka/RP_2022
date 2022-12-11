@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/Astyle.css"> 
+    <link rel="stylesheet" type="text/css" href="/static/navigation.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title> Course Predictor</title>
+</head>
+<body>
+
+    <header>
+        <ul class="navigation">
+            <li><a href="">Course Predictor</a></li>
+            <li><a href="/index">Specialization Predictor</a></li>
+            <li><a href="/tindex">Elective Modules Predictor</a></li>
+            <li><a href="/udari_index">Churn Prediction</a></li>
+        </ul>
+        <h1 id="main_title" style="text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            margin-right: -13px;
+            margin-left: -10px;">Course Prediction System</h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="title">
+            Course Predictor
+        </div>
+
+        <form action="/Aindex" method="POST">
+            <div class="form">
+                <div class="inputfield">
+                    <label for="FollowedCourses">Did you followed any courses/deploma before?</label>
+                    <div class = "custom_select">
+                        <select name="FollowedCourses" id="FollowedCourses">
+                            <option value="" selected hidden>Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="OLevelScience">O/L Exam results - Science</label>
+                    <div class = "custom_select">
+                        <select name="OLevelScience" id="OLevelScience">
+                            <option value="" selected hidden>Select</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="s">S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="OLevelMaths">O/L Exam results - Mathematics</label>
+                    <div class = "custom_select">
+                        <select name="OLevelMaths" id="OLevelMaths">
+                            <option value="" selected hidden>Select</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="s">S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="OLevelEnglish">O/L Exam results - English</label>
+                    <div class = "custom_select">
+                        <select name="OLevelEnglish" id="OLevelEnglish">
+                            <option value="" selected hidden>Select</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="s">S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="OLevelSinhala">O/L Exam results - Sinhala</label>
+                    <div class = "custom_select">
+                        <select name="OLevelSinhala" id="OLevelSinhala">
+                            <option value="" selected hidden>Select</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="s">S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="OLevelIct">O/L Exam results - ICT</label>
+                    <div class = "custom_select">
+                        <select name="OLevelIct" id="OLevelIct">
+                            <option value="" selected hidden>Select</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="s">S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="ALevelStream">A/L Exam Stream</label>
+                    <div class = "custom_select">
+                        <select name="ALevelStream" id="ALevelStream">
+                            <option value="" selected hidden>Select</option>
+                            <option value="maths">Maths</option>
+                            <option value="biology">Biology</option>
+                            <option value="commerce">Commerce</option>
+                            <option value="technolgy">Technology</option>
+                            <option value="arts">Arts</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="ALevelSubject1">A/L Subject 1 result</label>
+                    <div class = "custom_select">
+                        <select name="ALevelSubject1" id="ALevelSubject1">
+                            <option value="" selected hidden>Select</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="s">S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="ALevelSubject2">A/L Subject 2 result</label>
+                    <div class = "custom_select">
+                        <select name="ALevelSubject2" id="ALevelSubject2">
+                            <option value="" selected hidden>Select</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="s">S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="ALevelSubject3">A/L Subject 3 result</label>
+                    <div class = "custom_select">
+                        <select name="ALevelSubject3" id="ALevelSubject3">
+                            <option value="" selected hidden>Select</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="s">S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label for="ALevelGeneralEnglish">Result for General English (A/L)</label>
+                    <div class = "custom_select">
+                        <select name="ALevelGeneralEnglish" id="ALevelGeneralEnglish">
+                            <option value="" selected hidden>Select</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="s">S</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <input class="btn" type="submit"  value="Predict Best Course">
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <footer class="bg-dark text-white pt-5 pb-4" style="margin-right: -13px; margin-left: -10px;">
+        <div class="container text-left text-md-left">
+            <div class="row text-left text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">SLIIT</h5>
+                    <p>We are a leading non-state higher education institute approved by the University Grants Commission (UGC) under the Universities Act. We are members of the Association of Commonwealth Universities (ACU), as well as the International Association of Universities (IAU). We are also the first Sri Lankan institute to be accredited by the Institute of Engineering & Technology( IET), UK and Engineering Council, UK.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About SLIIT</h5>
+                    <P>
+                        <a href="#" class="text-white" style="text-decoration: none;">About</a>  
+                    </P>
+                    <P>
+                        <a href="#" class="text-white" style="text-decoration: none;">Programmes</a>  
+                    </P>
+                    <P>
+                        <a href="#" class="text-white" style="text-decoration: none;">Facilities</a>  
+                    </P>
+                    <P>
+                        <a href="#" class="text-white" style="text-decoration: none;">Contact Us</a>  
+                    </P>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Student Life</h5>
+                    <P>
+                        <a href="#" class="text-white" style="text-decoration: none;">Career Guidance</a>  
+                    </P>
+                    <P>
+                        <a href="#" class="text-white" style="text-decoration: none;">Clubs & Societies</a>  
+                    </P>
+                    <P>
+                        <a href="#" class="text-white" style="text-decoration: none;">Student Events</a>  
+                    </P>
+                    <P>
+                        <a href="#" class="text-white" style="text-decoration: none;">Sports</a>  
+                    </P>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <P>
+                        <i  class="fas fa-home mr-3"></i>New Kandy road,Malabe,Sri Lanka 
+                    </P>
+                    <P>
+                        <i  class="fas fa-envelope mr-3"></i>info@sliit.lk
+                    </P>
+                    <P>
+                        <i  class="fas fa-phone mr-3"></i>+94 112347856
+                    </P>
+                    <P>
+                        <i  class="fas fa-print mr-3"></i>+94 112347857
+                    </P>
+
+                </div>
+
+            </div>
+
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p> Copyright 02020 All rights reserved by:
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-warning">The providers</strong>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

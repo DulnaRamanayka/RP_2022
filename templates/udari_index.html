@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/udaristyle.css">
+    <title>Student Churn Prediction</title>
+</head>
+<body>
+    
+
+    <!--NavBar-->
+    <ul>
+        <li><a class="active" href="#C2">Home</a></li>
+        <li><a href="#C1">Form</a></li>
+        <li><a href="#C3">Churn Status</a></li>
+        <li><a href="#C5">Our Team</a></li>
+      </ul>
+
+
+<!--Photos-->
+
+    <div id="C2" class="row">
+        <div class="column">
+            <img class="pic1" src="/static/4.jpg" style="width: 99%;">
+        </div>
+        <div class="column">
+            <img class="pic2" src="/static/1.jpg" style="width: 120%;">
+        </div>
+    </div>
+    
+<!--TransBox-->
+
+
+    <div>
+        <div class="background">
+            <div class="transbox">
+                <h2>In every higher education setting, evaluating a student's 
+                    academic achievement is critical. This is necessary to identify the 
+                    student groups that will perform well academically and the students that 
+                    will struggle academically and have low GPAs so that they can receive some sort 
+                    of remedial instruction. Students' academic success is influenced by a number 
+                    of variables, including their past academic performance, psychological characteristics, 
+                    and other variables.The final stage of formal education is the university.
+                    But over time, the Management Section realizes the truth that the university's student 
+                    churn rate Scale becomes an issue. The objective of This study attempts to forecast if a 
+                    student will churn or be loyal in the future, the data will be based on data from previous years.
+                </h2>
+            </div>
+          </div>
+          <div class="background">
+            <div class="transbox">
+                <h2> What is churn prediction in a university?</h2>
+                    <h3>Prediction means detecting which students 
+                        are likely to leave academics or cancel contributions to 
+                        academics in the university. And students who are completed 
+                        successfully their degree programs called loyal students or successful students.
+                    </h3>
+            </div>
+          </div>
+          <div class="background">
+            <div class="transbox">
+                <h2> Why is it important?</h2>
+                    <h3>The final stage of formal education is the university. But over time,
+                         the Management Section realizes the truth that the university's student
+                          churn rate Scale becomes an issue. The objective of This study attempts to 
+                          forecast if a student will churn or be loyal in the future, the data will be 
+                          based on data from previous years.
+
+                        So, we have created a small form to identify 
+                        you to see your future churn prediction. Please complete the 
+                        below form correctly.
+                        
+                    </h3>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!--Form-->
+    
+    <div id="C1" class="wrapper">
+        
+        <div  class="title">Student Churn Prediction</div>
+        <form action="/udari_index" method="POST">
+            
+            <div class="form">
+                <div class="inputfield">
+                    <label for="EAP_English">EAP_English</label>
+                    <div class = "custom_select">
+                        <select name="EAP_English" id="EAP_English">
+                            <option value="" selected hidden>Select</option>
+                            <option value="80">A+</option>
+                            <option value="75">A</option>
+                            <option value="70">A-</option>
+                            <option value="65">B+</option>
+                            <option value="60">B</option>
+                            <option value="55">B-</option>
+                            <option value="50">C+</option>
+                            <option value="45">C</option>
+                            <option value="40">C-</option>
+                            <option value="30">D</option>
+                            <option value="0" >E</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="IP">IP</label>
+                    <div class = "custom_select">
+                        <select name="IP" id="IP">
+                            <option value="" selected hidden>Select</option>
+                            <option value="80">A+</option>
+                            <option value="75">A</option>
+                            <option value="70">A-</option>
+                            <option value="65">B+</option>
+                            <option value="60">B</option>
+                            <option value="55">B-</option>
+                            <option value="50">C+</option>
+                            <option value="45">C</option>
+                            <option value="40">C-</option>
+                            <option value="30">D</option>
+                            <option value="0" >E</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="mc">MC</label>
+                    <div class = "custom_select">
+                        <select name="mc" id="mc">
+                            <option value="" selected hidden>Select</option>
+                            <option value="80">A+</option>
+                            <option value="75">A</option>
+                            <option value="70">A-</option>
+                            <option value="65">B+</option>
+                            <option value="60">B</option>
+                            <option value="55">B-</option>
+                            <option value="50">C+</option>
+                            <option value="45">C</option>
+                            <option value="40">C-</option>
+                            <option value="30">D</option>
+                            <option value="0" >E</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="OOP">OOP</label>
+                    <div class = "custom_select">
+                        <select name="OOP" id="OOP">
+                            <option value="" selected hidden>Select</option>
+                            <option value="80">A+</option>
+                            <option value="75">A</option>
+                            <option value="70">A-</option>
+                            <option value="65">B+</option>
+                            <option value="60">B</option>
+                            <option value="55">B-</option>
+                            <option value="50">C+</option>
+                            <option value="45">C</option>
+                            <option value="40">C-</option>
+                            <option value="30">D</option>
+                            <option value="0" >E</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="Specialization">What is your current Specialization?</label>
+                    <div class = "custom_select">
+                        <select name="Specialization" id="Specialization">
+                            <option value="" selected hidden>Select</option>
+                            <option value="1">IT</option>
+                            <option value="2">SE</option>
+                            <option value="3">CSNE</option>
+                            <option value="4">CS</option>
+                            <option value="5">DS</option>
+                            <option value="6">ISE</option>
+                            <option value="7">IM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="Degree">Are there any alternative preferring Degree?</label>
+                    <div class = "custom_select">
+                        <select name="Degree" id="Degree">
+                            <option value="" selected hidden>Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="scholarship">Have you selected to any scholarship?</label>
+                    <div class = "custom_select">
+                        <select name="scholarship" id="scholarship">
+                            <option value="" selected hidden>Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="InternshipJob">Are you doing any internship/Job?</label>
+                    <div class = "custom_select">
+                        <select name="InternshipJob" id="InternshipJob">
+                            <option value="" selected hidden>Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="RepeatProrata">Do you have any Repeat/Prorata modules to complete?</label>
+                    <div class = "custom_select">
+                        <select name="RepeatProrata" id="RepeatProrata">
+                            <option value="" selected hidden>Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="RepeatProrataCount">How many Repeat/Prorata modules you have to complete?</label>
+                    <input class="input" type="text" name="RepeatProrataCount" required>
+                </div>
+                <div class="inputfield">
+                    <label for="GPA">GPA</label>
+                    <input class="input" type="text" name="GPA" required>
+                </div>
+    
+                <!--PopupWindow-->
+            
+                <div class="inputfield">
+                    <input class="btn" type="submit" onclick="openPopup()" value="churn Prediction">
+
+                    <div class="popup" id="popup">
+
+                        <h2> Successful</h2>
+                        <p>  Your details are successfully submitted.</p>
+                            <h3>Your Churn Prediction is</h3><h2> {{pred}}</h2>
+                           
+                        <button type="button" onclick="closePopup()"> Okay</button>
+                    </div>
+
+                </div>
+                <script>
+                    let popup = document.getElementById("popup");
+                        
+                        function openPopup(){
+                            popup.classList.add("open-popup");
+                                
+                        }
+                        function closePopup(){
+                            popup.classList.remove("open-popup");
+                                
+                        }                            
+                </script>
+            </div>
+        </div>
+        </form>
+
+      
+
+    </div>
+
+
+        <!--interface_1-->
+
+        <div class="interface_1">
+            <div class="about-section7">
+                <h1 id="C3">About Your Churn Prediction</h1>
+                <p>We help to find your churn prediction through your GPA calculation. </p>
+                
+            </div>
+        
+            <div  class="churn_status" >
+                <h2> Churn Prediction Statuses</h2>
+            </div><br>
+        
+            <div class="row7">
+        
+                <div class="column7">
+                    <div class="card7">
+                    
+                        <div class="container7">
+        
+                            <h2 style="text-align:center ;"><button class="button8"><h2>Distinctive…! </h2></button></h2><br>
+        
+                            <h2 class="title7">About Distinctive status</h2><hr><br>
+                            
+                            <p>We conducted a survey at our university to estimate the churn prediction 
+                                using GPA calculation. You filled out the information (Module marks, 
+                                current specialization, alternative preferring degree, working or not etc.)  
+                                for the churn prediction form as a second-year student, and by the end of 
+                                your fourth year, you can bring your overall GPA to more than 3.6.
+                            </p><br>
+                            <h3>we have believed that you will be able to move forward without any external 
+                                influences other than the current things if you work the way you are currently working.
+                            </h3><br><br>
+                            
+                            <h2>Good Luck for your Future…!</h2><br>
+        
+                            <p><button class="button7"></button></p><br>
+        
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="column7">
+        
+                    <div class="card7">
+                    
+                        <div class="container7">
+        
+                            <h2 style="text-align:center ;"><button class="button8"><h2>Very Good…! </h2></button></h2><br>
+        
+                            <h2 class="title7">About Very Good status</h2><hr><br>
+        
+                            <p>We conducted a survey at our university to estimate the churn prediction 
+                                using GPA calculation. You filled out the information (Module marks, 
+                                current specialization, alternative preferring degree, working or not etc.)  
+                                for the churn prediction form as a second-year student, you can bring your 
+                                overall GPA between 3.01 - 3.61 at the end of your fourth year.
+                            </p><br>
+        
+                            <h3>we have believed that you will be able to move forward without any external 
+                                influences other than the current things if you work the way you are currently working.
+                            </h3><br><br>
+        
+                            <h2>Good Luck for your Future…!</h2><br>
+                                
+                            <p><button class="button7"></button></p><br>
+        
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="row7">
+        
+                <div class="column7">
+                    <div class="card7">
+                    
+                    <div class="container7">
+        
+                            <h2 style="text-align:center ;"><button class="button8"><h2>Good…! </h2></button></h2><br>
+        
+                            <h2 class="title7">About Good status</h2><hr><br>
+        
+                            <p>We conducted a survey at our university to estimate the churn prediction 
+                                using GPA calculation. You filled out the information (Module marks, 
+                                current specialization, alternative preferring degree, working or not etc.)  
+                                for the churn prediction form as a second-year student, you can bring your 
+                                overall GPA between 2.51 - 3.00 at the end of your fourth year.
+                            </p><br>
+        
+                            <h3>we have believed that you will be able to move forward without any external 
+                                influences other than the current things if you work the way you are currently working.
+                            </h3><br><br>
+        
+                            <h2>Good Luck for your Future…!</h2><br>
+        
+                            <p><button class="button7"></button></p><br>
+        
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="column7">
+                    <div class="card7">
+                    
+                    <div class="container7">
+        
+                        <h2 style="text-align:center ;"><button class="button8"><h2>Near at risk of drop out…!</h2></button></h2><br>
+        
+                            <h2 class="title7">About near at risk of drop out status</h2><hr><br>
+        
+                            
+                            <p>We conducted a survey at our university to estimate the churn prediction using 
+                                GPA calculation. You filled out the information (Module marks, current specialization, 
+                                alternative preferring degree, working or not etc.)  for the churn prediction form as a 
+                                second-year student, you can bring your overall GPA between 2.00 – 2.50 at the end of your 
+                                fourth year.
+                            </p><br>
+        
+                            <h3>We think you can reach the GPA that works better if you replace out the current Specialization
+                                Degree for another suitable Specialization Degree.
+                            </h3><br><br>
+                            
+                            <h2>Good Luck for your Future…!</h2><br>
+        
+                            <p><button class="button7"></button></p><br>
+        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="row7">
+                
+                <div class="column7">
+                    <div class="card7">
+        
+                    
+                        <div class="container7">
+        
+                            <h2 style="text-align:center ;"><button class="button8"><h2>At risk of drop out…! </h2></button></h2><br> 
+        
+                            <h2 class="title7">About at risk of drop out status</h2><hr><br>
+        
+                            <p>We conducted a survey at our university to estimate the churn prediction using GPA 
+                                calculation. You filled out the information (Module marks, current specialization, 
+                                alternative preferring degree, working or not etc.)  for the churn prediction form 
+                                as a second-year student, you can bring your overall GPA between 1.10 – 2.00 at the 
+                                end of your fourth year.
+                            </p><br>
+        
+                            <h3>We think you can reach the GPA that works better if you replace out the current Specialization
+                                Degree for another suitable Specialization Degree.
+                            </h3><br><br>
+        
+                            <h2>Good Luck for your Future…!</h2><br>
+                            
+                            <p><button class="button7"></button></p><br>
+        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column7">
+                    <div class="card7">
+                    
+                        <div class="container7">
+        
+                            <h2 style="text-align:center ;"><button class="button8"><h2>Try to find better suitable specialization degree…! </h2></button></h2><br>
+        
+                            <h2 class="title7">About try to find better suitable specialization degree status</h2><hr><br>
+        
+                            <p>We conducted a survey at our university to estimate the churn prediction using GPA 
+                                calculation. You filled out the information (Module marks, current specialization, 
+                                alternative preferring degree, working or not etc.)  for the churn prediction form 
+                                as a second-year student, you can bring your overall GPA lower than 1.00 at the end 
+                                of your fourth year
+                            </p><br>
+        
+                            <h3>You are not qualified to obtain a degree. We advise you to change specializations 
+                                as soon as possible. 
+                            </h3><br><br>
+                            
+        
+                            <h2>Good Luck for your Future…!</h2><br>
+        
+                            <p><button class="button7"></button></p><br>
+        
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        
+        
+        
+    
+        </div>
+
+
+        <div id="C5" class="about_body">
+
+            <div id="C5"  class="about-section">
+                <h1 style="text-align:center">Our Team Members</h1>
+                
+              </div>
+              
+              
+              <div class="row1">
+                <div class="column1">
+                  <div class="card1">
+                    <img src="/static/Anduni.png" alt="Anduni" style="width:350px">
+                    <div class="container1">
+                      <h2>Liyanagunawardhana A.P.</h2><br>
+                      <p class="title1">SPECIALIZATION IN INFORMATION TECHNOLOGY</p><br>
+                      <p>Recommendation System for Predict the Suitable Course at Enrollment 
+                        Phase of University</p><br>
+                        <h5><a href="mailto:andunipamoda98@gmail.com">Email to me..</a>.<br></h5><br>
+                      <p><button class="button1"></button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column1">
+                  <div class="card1">
+                    <img src="/static/dulan.png" alt="Dulan" style="width:295px">
+                    <div class="container1">
+                      <h2>Ramanayake D.Y</h2><br><br>
+                      
+                      <p class="title1">Specialization in Information Technology</p><br>
+                      <p>Recommend system for Predict The Suitable specialization program 
+                        at the undergraduate level.</p><br>
+                        <h5><a href="mailto:dulanramanayaka12@gmail.com">Email to me..</a>.<br></h5><br>
+                      <p><button class="button1"></button></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="column1">
+                  <div class="card1">
+                    <img src="/static/thisum.png" alt="Thisum" style="width:300px">
+                    <div class="container1">
+                      <h2>Ekanayake E.M.T.K.B</h2><br>
+                      <p class="title1">Specialization in Information Technology</p><br>
+                      <p>Recommend Suitable Best Elective modules for final year students at SLIIT</p><br>
+                      <h5><a href="mailto:thisumkalhan999@gmail.com">Email to me..</a>.<br></h5><br>
+                      <p><button class="button1"></button></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column1">
+                    <div class="card1">
+                      <img src="/static/udarii.png" alt="Udari" style="width:270px">
+                      <div class="container1">
+                        <h2>Weerarathna U.U.</h2><br><br>
+                        <p class="title1">Specialization in Information Systems Engineering</p><br>
+                        <p>Predict The Student Churn Prediction through GPA calculation</p><br>
+                        <h5><a href="udariweerarathna4@gmail.com">Email to me..</a>.<br></h5><br>
+                        <p><button class="button1"></button></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+        </div>
+        
+
+
+
+
+
+</body>
+</html>

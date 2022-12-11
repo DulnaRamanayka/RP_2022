@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/tstyle.css">
+    <title>Elective Modules Predictor</title>
+</head>
+<body>
+
+    <div class="context">
+        
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+          
+    <div class="wrapper">
+        <div class="title"> ~ Elective Modules Predictor ~</div>
+        <form action="/tindex" method="POST">
+            <div class="form">
+               <div class="inputfield">
+					<label for="gpa">Enter Student GPA</label>
+					<input class="input" type="text" name="gpa" required>
+				</div>
+            
+                 <div class="inputfield">
+					<label for="special">Select Specialization</label>
+					<div class = "custom_select">
+						<select name="special" id="special">
+							<option value="" selected hidden>Select</option>
+							<option value="1111">Information Technology</option>
+							<option value="2222">Software Engineering</option>
+							<option value="3333">Information System Engineering</option>
+							<option value="4444">Cyber Security</option>
+							<option value="5555">Computer Systems and Network Engineering</option>
+							
+						</select>
+					</div>
+				</div>
+                 <div class="inputfield">
+                    <label for="ra">Research Area</label>
+                    <div class = "custom_select">
+                        <select name="ra" id="ra">
+                            <option value="" selected hidden>Select</option>
+                            <option value="11">Autonomous Intelligent Machines and Systems (AIMS)</option>
+                            <option value="22">Machine Learning and Soft Computing</option>
+                            <option value="33">Knowledge Inspired Computing (KIC)</option>
+                            <option value="44">Computing for Inclusive and Equitable Society(CIES)</option>
+                            <option value="55">Computing Infrastructure and Security (CIS)</option>
+                            <option value="66">Software Systems & Technologies (SST)</option>
+                            <option value="77">Other</option>
+                        </select>
+                    </div>
+				</div>
+                <div class="inputfield">
+                        <label for="ia">Internship Area</label>
+                        <div class = "custom_select">
+                            <select name="ia" id="ia">
+                                <option value="" selected hidden>Select</option>
+                                <option value="100">Software Quality Assurance (SQA)</option>
+                                <option value="101">Software Engineer</option>
+                                <option value="102">Application Engineer</option>
+                                <option value="103">Web Developer</option>
+                                <option value="104">IT Educationist</option>
+                                <option value="105">Development Operations (DevOps) Engineer</option>
+                                <option value="106">System and Database Administrator</option>
+                                <option value="107">Data Scientist</option>
+                                <option value="108">Network Engineer</option>
+                                <option value="109">Information Technology Manager</option>
+                                <option value="110">Business Analysis</option>
+                                <option value="111">Other</option>
+                            </select>
+                        </div>
+				 </div>	
+                
+				
+                
+        
+				<div class="inputfield">
+                        <label for="rate">Rate your code knowledge</label>
+                        <div class = "custom_select">
+                            <select name="rate" id="rate">
+                                  <option value="" selected hidden>Select</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+								  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                            </select>
+                        </div>
+				</div>
+				<div class="inputfield">
+                       <label for="rp">Repeats/Prorata </label>
+                       <div class = "custom_select">
+                              <select name="rp" id="rp">
+                                   <option value="" selected hidden>Select</option>
+                                   <option value="1">Yes</option>
+                                   <option value="0">No</option>
+                              </select>
+                        </div>
+                </div>
+                <div class="inputfield">
+                    <input class="btn" type="submit" onclick="openPopup()" value="Predict Your Suitable Elective Module">
+
+                    <div class="popup" id="popup">
+
+                        <h2> Successful</h2>
+                        <p> You details successfully submited. 
+                            Suitable Elective module for You {{tpred_value}}</p>
+                        <button type="button" href = "https://www.homeworkhelpglobal.com/ca/blog/the-art-of-carefully-choosing-electives/"> More Details</button>    
+                        <button type="button" onclick="closePopup()"> Okay</button>
+                    </div>
+
+                </div>
+                <script>
+                     let popup = document.getElementById("popup");
+                        
+                        function openPopup(){
+                            popup.classList.add("open-popup");
+                                
+                        }
+                        function closePopup(){
+                            popup.classList.remove("open-popup");
+                                
+                        }                            
+                </script>
+            </div>
+        </div>
+    </form>
+</ul>
+</div >
+</body>
+</html>
+

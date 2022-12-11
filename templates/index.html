@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Specialization Predictor for Future</title>
+</head>
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+               
+<body>
+    <div class="wrapper">
+        <div class="title">Specialization Predictor for Future</div>
+        <form action="/index" method="POST">
+            <div class="form">
+               <div class="inputfield">
+					<label for="gpa">Student GPA</label>
+					<input class="input" type="text" name="gpa" required>
+				</div>
+            
+                 <div class="inputfield">
+					<label for="dsa">Reusult for DSA</label>
+					<div class = "custom_select">
+						<select name="dsa" id="dsa">
+							<option value="" selected hidden>Select</option>
+							<option value="45">C </option>
+							<option value="50">C+</option>
+							<option value="55">B-</option>
+							<option value="60">B </option>
+							<option value="65">B+</option>
+							<option value="70">A-</option>
+							<option value="75">A </option> 
+							<option value="80">A+</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+                 <div class="inputfield">
+                    <label for="itp">Reusult for ITP</label>
+                    <div class = "custom_select">
+                        <select name="itp" id="itp">
+                            <option value="" selected hidden>Select</option>
+                            <option value="45">C </option>
+							<option value="50">C+</option>
+							<option value="55">B-</option>
+							<option value="60">B </option>
+							<option value="65">B+</option>
+							<option value="70">A-</option>
+							<option value="75">A </option> 
+							<option value="80">A+</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+				</div>
+                <div class="inputfield">
+                        <label for="ps">Rusult for PS</label>
+                        <div class = "custom_select">
+                            <select name="ps" id="ps">
+                                <option value="" selected hidden>Select</option>
+                                <option value="45">C </option>
+                                <option value="50">C+</option>
+                                <option value="55">B-</option>
+                                <option value="60">B </option>
+                                <option value="65">B+</option>
+                                <option value="70">A-</option>
+                                <option value="75">A </option> 
+                                <option value="80">A+</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+				 </div>	
+                <div class="inputfield">
+                        <label for="mad">Rusult for MAD</label>
+                        <div class = "custom_select">
+                            <select name="mad" id="mad">
+                                <option value="" selected hidden>Select</option>
+                            <option value="45">C </option>
+							<option value="50">C+</option>
+							<option value="55">B-</option>
+							<option value="60">B </option>
+							<option value="65">B+</option>
+							<option value="70">A-</option>
+							<option value="75">A </option> 
+							<option value="80">A+</option>
+                                <option value="other">Other</option>
+                             </select>
+                       </div>
+				</div>
+                <div class="inputfield">
+                        <label for="mc">Rusult for MC</label>
+                         <div class = "custom_select">
+                             <select name="mc" id="mc">
+                                    <option value="" selected hidden>Select</option>
+                                <option value="45">C </option>
+                                <option value="50">C+</option>
+                                <option value="55">B-</option>
+                                <option value="60">B </option>
+                                <option value="65">B+</option>
+                                <option value="70">A-</option>
+                                <option value="75">A </option> 
+                                <option value="80">A+</option>
+                                    <option value="other">Other</option>
+                                </select>
+                           </div>
+				</div>
+                <div class="inputfield">
+                      <label for="oop">Rusult for OOP</label>
+                      <div class = "custom_select">
+                           <select name="oop" id="oop">
+                               <option value="" selected hidden>Select</option>
+                                <option value="45">C </option>
+                                <option value="50">C+</option>
+                                <option value="55">B-</option>
+                                <option value="60">B </option>
+                                <option value="65">B+</option>
+                                <option value="70">A-</option>
+                                <option value="75">A </option> 
+                                <option value="80">A+</option>
+                               <option value="other">Other</option>
+                            </select>
+                        </div>
+                </div>
+				<div class="inputfield">
+                        <label for="rate">Rate Your Coding Knolage</label>
+                        <div class = "custom_select">
+                            <select name="rate" id="rate">
+                                  <option value="" selected hidden>Select</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+								  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                            </select>
+                        </div>
+				</div>
+				<div class="inputfield">
+                       <label for="rp">Do You Have Repete/Prorata</label>
+                       <div class = "custom_select">
+                              <select name="rp" id="rp">
+                                   <option value="" selected hidden>Select</option>
+                                   <option value="1">Yes</option>
+                                   <option value="0">No</option>
+                              </select>
+                        </div>
+                </div>
+                <div class="inputfield">
+                    <input class="btn" type="submit" onclick="openPopup()" value="Predict Your Specialization">
+
+                    <div class="popup" id="popup">
+
+                        <h2> Successful</h2>
+                        <p> You details successfully submited. 
+                            Best Specialization for You {{pred_value}}</p>
+                        <button type="button" href = "interface(SE)"> More Details</button>    
+                        <button type="button" onclick="closePopup()"> Okay</button>
+                    </div>
+
+                </div>
+                <script>
+                     let popup = document.getElementById("popup");
+                        
+                        function openPopup(){
+                            popup.classList.add("open-popup");
+                                
+                        }
+                        function closePopup(){
+                            popup.classList.remove("open-popup");
+                                
+                        }                            
+                </script>
+            </div>
+        </div>
+    </form>
+    </ul>
+</div >
+  
+</body>
+</html>
